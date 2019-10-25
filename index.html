@@ -5,31 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <pre class="navicon">&#9776</pre>
+        <pre class="nav-icon">&#9776</pre>
         <h1 class="heading">CodeJam - Pallete</h1>
-        <a href="" class="kebab-menu"><img src="" alt=""></a>
+        <a href="" class="kebab-menu"><img src="assets/images/kebab-menu.svg" alt="options"></a>
     </header>
     <main>
         <div class="pallets">
             <div class="instruments pallet">
-                <div class="pallet_item"><img src="" alt="" class="item_icon"></div>
-                <div class="pallet_item underlined"><img src="" alt="" class="item_icon"></div>
-                <div class="pallet_item"><img src="" alt="" class="item_icon"></div>
-                <div class="pallet_item"><img src="" alt="" class="item_icon"></div>
+                <div class="pallet_item">
+                    <img src="assets/images/paint icon.svg" alt="" class="item_icon">
+                    <p class="item_name">Paint bucket</p>
+                </div>
+                <div class="pallet_item underlined">
+                    <img src="assets/images/choose icon.svg" alt="" class="item_icon">                
+                    <p class="item_name">Choose color</p>
+                </div>
+                <div class="pallet_item">
+                    <img src="assets/images/move icon.svg" alt="" class="item_icon">                
+                    <p class="item_name">Move</p>
+                </div>
+                <div class="pallet_item">
+                    <img src="assets/images/Transform icon.svg" alt="" class="item_icon">                
+                    <p class="item_name">Transform</p>
+                </div>
             </div>
             <div class="colors pallet">
-                <div class="pallet_item"><img src="" alt="" class="item_icon"></div>
-                <div class="pallet_item underlined"><img src="" alt="" class="item_icon"></div>
-                <div class="pallet_item"><img src="" alt="" class="item_icon"></div>
-                <div class="pallet_item"><img src="" alt="" class="item_icon"></div>
+                <div class="pallet_item">
+                    <div class="item_round"></div>              
+                    <p class="item_name">Current color</p>
+                </div>
+                <div class="pallet_item underlined">
+                    <div class="item_round green"></div>                 
+                    <p class="item_name">prev color</p>
+                </div>
+                <div class="pallet_item">
+                    <div class="item_round red"></div>                
+                    <p class="item_name">red </p>
+                </div>
+                <div class="pallet_item">
+                    <div class="item_round blue"></div>              
+                    <p class="item_name"> blue</p>
+                </div>
             </div>
         </div>
         <div class="workspace">
             <canvas class="canvas"></canvas>
         </div>
+        <div class="nav-bar">
+            <button class="button-4x4">4x4</button>
+            <button class="button-32x32">32x32</button>
+            <button class="button-img">256x256</button>
+        </div>
     </main>
+    <script src="index.js" ></script>
 </body>
 </html>
