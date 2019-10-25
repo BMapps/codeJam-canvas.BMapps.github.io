@@ -1,1 +1,104 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.header {
+  height: 50px;
+  padding: 0 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 14px 10px -10px #00000066;
+          box-shadow: 0px 14px 10px -10px #00000066;
+}
+
+.nav-icon {
+  cursor: pointer;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.pallet {
+  padding-right: 10px;
+  max-width: 250px;
+  -webkit-box-shadow: 0px 7px 10px 0px #00000066;
+          box-shadow: 0px 7px 10px 0px #00000066;
+}
+
+.colors {
+  margin-top: 100px;
+}
+
+.pallet_item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.underlined {
+  border-bottom: 1px solid #00000066;
+}
+
+.item_icon {
+  margin: 0 10px;
+}
+
+.item_name {
+  margin-left: 20px;
+}
+
+.item_round {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #00000066;
+  background-color: #666666;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.workspace {
+  min-width: 512px;
+}
+
+.nav-bar {
+  max-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-bar button {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

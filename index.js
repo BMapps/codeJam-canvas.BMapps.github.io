@@ -5,12 +5,11 @@ canvas.width=512;
 
 canvas.height=512;
 
-let img4x4=getJson('https://raw.githubusercontent.com/BMapps/tasks/master/tasks/stage-2/codejam-canvas/data/4x4.json');
+let img4x4=getJson('https://raw.githubusercontent.com/BMapps/tasks/master/tasks/stage-2/codejam-canvas/data/4x4.json')
+.then(result =>result.json()).then(result=> {draw(result); img4x4=result;});
 let img32=getJson('https://raw.githubusercontent.com/BMapps/tasks/master/tasks/stage-2/codejam-canvas/data/32x32.json');
 let img=new Image();
 img.src=('https://raw.githubusercontent.com/BMapps/tasks/master/tasks/stage-2/codejam-canvas/data/image.png');
-
-
 
 
 
@@ -25,9 +24,8 @@ async function draw(img ){
             canvasContext.fillRect(i*widthStep,j*heightStep,widthStep,heightStep);
         }
     }
-    
-
 }
+
 function drawImg(){
     canvasContext.drawImage(img, 0, 0, 512, 512);
 }
@@ -40,9 +38,7 @@ function getColor(color){
 }
 
 async function getJson(url){
-    return await fetch(url);
-    //let data= await res;   
-    return res;
+    return await fetch(url);  
 }
 
 let button4x4 =document.querySelector(".button-4x4");
